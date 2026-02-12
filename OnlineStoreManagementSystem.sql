@@ -1,7 +1,3 @@
--- =====================================================
--- ONLINE STORE MANAGEMENT SYSTEM - FULL SQL SERVER SCRIPT
--- =====================================================
-
 -- 1. CREATE DATABASE
 CREATE DATABASE OnlineStoreDB;
 GO
@@ -117,3 +113,4 @@ FROM OrderItems oi
 JOIN Products p ON oi.ProductID = p.ProductID
 GROUP BY p.Name
 ORDER BY TotalSales DESC;
+
